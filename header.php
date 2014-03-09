@@ -45,7 +45,7 @@
                     </ul>
                 </nav>
                 <form class="navbar-search" method="post" action="./" role="search">
-                    <input type="text" name="s" class="search-input" />
+                    <input type="text" name="s" placeHolder="站内搜索" class="search-input" />
                     <!--
                     <button type="submit" class="search-submit"><?php _e('搜索'); ?></button>
                     -->
