@@ -18,6 +18,7 @@ else if(isset($_GET["action"]) && $_GET["action"] == "ajax_comments") {
 else {   
     if (strpos($_SERVER["PHP_SELF"],"themes"))
         header('Location:/');
+
     $this->need('header.php');
 
     $this->need('article.php');

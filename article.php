@@ -25,8 +25,10 @@
             <ul>
                 <li><?php $this->date('Y/m/d'); ?></li>
                 <li><span>|</span></li>
+                <?php if (!$this->is('page')): ?>
                 <li><?php $this->category(', '); ?></li>
                 <li><span>|</span></li>
+                <?php endif; ?>
                 <li><?php $this->commentsNum('%d Replies'); ?></li>
             </ul>
         </section>

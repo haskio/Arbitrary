@@ -5,7 +5,7 @@ $(document).ready(function() {
             return false;
         }
     });
-    $("body").on("click", ".page-navigator li a, .article-near a", function(e) {
+    $("body").on("click", ".page-navigator li a", function(e) {
         e.preventDefault();
         var dom = $(this);
         var content = dom.attr('href').indexOf("comments") !== -1 ? "comments" : "article";

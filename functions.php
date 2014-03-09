@@ -1,4 +1,0 @@
-<?php
-
-function themeConfig($form) {
-}

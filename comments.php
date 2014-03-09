@@ -1,8 +1,11 @@
 <section id="comments">
-
+    <?php $this->comments()->to($comments); ?>
     <?php if($this->allow('comment')): ?>
 
     <article class="new-comment" id="<?php $this->respondId(); ?>">
+        <div class="cancel-comment">
+            <?php $comments->cancelReply(); ?>
+        </div>
    	    <form method="post" action="<?php $this->commentUrl() ?>">
             <?php if(!$this->user->hasLogin()): ?>
             <p>
@@ -34,7 +37,6 @@
     <?php endif; ?>
 
     <article class="comments-list">
-        <?php $this->comments()->to($comments); ?>
         <?php $comments->listComments(); ?>
         <?php $comments->pageNav(); ?>
     </article>

@@ -18,7 +18,7 @@
         <![endif]-->
 
         <link rel="stylesheet" href="<?php $this->options->adminUrl('css/grid.css'); ?>">
-        <link rel="stylesheet" href="<?php $this->options->themeUrl('css/global.css'); ?>">
+        <link rel="stylesheet" href="<?php $this->options->themeUrl('style.css'); ?>">
 
         <?php $this->header(); ?>
     </head>
@@ -27,7 +27,7 @@
         <header class="navbar">
             <section class="container clearfix">
                 <h2 class="navbar-header">
-                    <a href="<?php $this->options->siteUrl(); ?>" class="nav-brand">SLOGER</a>
+                    <a href="<?php $this->options->siteUrl(); ?>" class="nav-brand"><?php $this->options->title(); ?></a>
                 </h2>
                 <nav class="navbar-inner clearfix">
                     <ul class="navbar-nav">
