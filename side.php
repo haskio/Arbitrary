@@ -10,13 +10,13 @@
     <article class="article recent-comments">
         <h3>最近回复</h3>
         <ul>
-        <?php $this->widget('Widget_Comments_Recent')->to($comments); ?>
-        <?php while($comments->next()): ?>
-            <li class="item">
-                <a href="<?php $comments->permalink(); ?>"><?php $comments->author(false); ?></a>：
-                <?php $comments->excerpt(35, '...'); ?>
+            <?php $this->widget('Widget_Comments_Recent')->to($comments); ?>
+            <?php while($comments->next()): ?>
+            <li>
+                <?php $comments->author(true, true); ?>：
+                <a href="<?php $comments->permalink(); ?>"><?php $comments->excerpt(30, '...'); ?></a>
             </li>
-        <?php endwhile; ?>
+            <?php endwhile; ?>
         </ul>
     </article>
 

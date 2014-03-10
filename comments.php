@@ -23,7 +23,7 @@
             <?php endif; ?>
             <textarea name="text"><?php $this->remember('text'); ?></textarea>
             <div class="clearfix">
-                <button type="submit">发布评论</button>
+                <button type="submit">发布评论 (Ctrl + Enter)</button>
             </div>
         </form>
     </article>
